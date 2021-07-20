@@ -1,1 +1,1 @@
-require 'cocoapods-pdk8/command/pdk8'
+#require 'cocoapods-pdk8/command/pdk8'

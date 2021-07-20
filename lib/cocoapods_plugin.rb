@@ -1,1 +1,5 @@
+require 'cocoapods'
+require 'cocoapods-pdk8/source_config'
+require 'cocoapods-pdk8/time_profiler'
+require 'cocoapods-pdk8/hook'
 require 'cocoapods-pdk8/command'
