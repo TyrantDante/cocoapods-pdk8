@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['804054226@qq.com']
   spec.description   = %q{pod install/update 加速}
   spec.summary       = %q{pod install/update 加速，详情请看readme}
-  spec.homepage      = 'https://github.com/EXAMPLE/cocoapods-pdk8'
+  spec.homepage      = 'https://github.com/TyrantDante/cocoapods-pdk8'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
