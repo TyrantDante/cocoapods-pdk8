@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'cocoapods-pdk8'
   spec.version       = CocoapodsPdk8::VERSION
   spec.authors       = ['戴易超']
-  spec.email         = ['daiyichao@corp.netease.com']
+  spec.email         = ['dycdante@icloud.com']
   spec.description   = %q{A short description of cocoapods-pdk8.}
   spec.summary       = %q{A longer description of cocoapods-pdk8.}
   spec.homepage      = 'https://github.com/EXAMPLE/cocoapods-pdk8'
