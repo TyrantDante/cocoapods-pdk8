@@ -11,7 +11,7 @@
 
 ## Usage
 
-`Podfile`里面如果有的多个`source`,如果定义`force`,会优先匹配`force`的源
+`Podfile`里面如果有的多个`source`,如果定义`force`,会优先匹配`force`的源,如果只有一个`source`就不需要关心这个
 ```
     force_source 'source2'
     source 'source1'
