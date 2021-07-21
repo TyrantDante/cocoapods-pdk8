@@ -170,23 +170,7 @@ module Pod
     alias origin_resolve_dependencies resolve_dependencies
     def resolve_dependencies
       time_profiler.add_milestone_start time_profiler.stage_resolve_dependencies, time_profiler.default_step
-      
-      plugin_sources = run_source_provider_hooks
-      analyzer = create_analyzer(plugin_sources)
-
-      UI.section 'Updating local specs repositories' do
-        analyzer.update_repositories
-      end if repo_update?
-
-      UI.section 'Analyzing dependencies' do
-        analyze(analyzer)
-        validate_build_configurations
-      end
-
-      UI.section 'Verifying no changes' do
-        verify_no_podfile_changes!
-        verify_no_lockfile_changes!
-      end if deployment?
+      analyzer = origin_resolve_dependencies
 
       time_profiler.add_milestone_stop time_profiler.stage_resolve_dependencies, time_profiler.default_step
 
